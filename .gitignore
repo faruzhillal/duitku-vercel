@@ -16,6 +16,12 @@
 # production
 /build
 
+# pwa
+public/sw.js
+public/sw.js.map
+public/workbox-*.js
+public/workbox-*.js.map
+
 # misc
 .DS_Store
 *.pem
@@ -26,7 +32,12 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
+.env
 .env*.local
+.env.production
+.env.development
+!.env.example
+!.env*.example
 
 # vercel
 .vercel
@@ -34,3 +45,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# prisma generated client
+app/generated/
